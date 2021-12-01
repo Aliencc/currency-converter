@@ -1,0 +1,14 @@
+api:
+  url: http://api.exchangeratesapi.io/v1/
+  key: e7de8413b966fbf20f53853a06c2f19c # TODO: store key and endpoint within some secure tool e.g. Vault
+  symbolsUpdatePeriod: P1D # 1 day
+
+cache.expirationTime: 60s
+
+server:
+  error:
+    include-message: always
+
+logging:
+  level:
+    com.hn: DEBUG
