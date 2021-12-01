@@ -2,9 +2,25 @@
 
 RESTful API to convert currency value based on the exchange rate at https://exchangeratesapi.io/.
 
+### Heroku
+
+App deployed to Heroku <br/>
+Example request: <br/>
+
+```
+curl --location --request POST 'https://desolate-fortress-04699.herokuapp.com/currency/convert' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"source": "EUR",
+"target": "VND",
+"value": 1000
+}'
+```
+
 ### Swagger link
 
-http://localhost:8080/swagger-ui/#/
+http://localhost:8080/swagger-ui/#/ <br/>
+https://desolate-fortress-04699.herokuapp.com/swagger-ui/#/
 
 ### Supported symbols
 
